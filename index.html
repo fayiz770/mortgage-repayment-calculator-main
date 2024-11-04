@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Mortgage repayment calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="title">
+        <h1>Mortgage</h1>
+        <p class="clear">Clear All</p>
+      </div>
+      <form action="#">
+
+        <div class="amount-container">
+          <label for="amount">Mortgage Amount</label>
+          <div class="amount">
+            <div class="euro-sign">€</div>
+            <input type="text" name="amount" id="amount">
+          </div>
+        </div>
+
+        <div class="term-and-rate-container">
+          <div>
+            <label for="term">Mortgage Term</label>
+            <div class="term">
+              <input type="text" name="term" id="term">
+              <div class="years-sign">Years</div>
+            </div>
+          </div>
+
+          <div>
+            <label for="rate">Interest Rate</label>
+            <div class="rate">
+              <input type="text" name="rate" id="rate">
+              <div class="percentage">%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="type">
+          <h2>Mortgage Type</h2>
+
+          <div class="repayment">
+            <input type="radio" name="type" id="repayment"> 
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="interest-only">
+            <input type="radio" name="type" id="interest-only"> 
+            <label for="repayment">Interest Only</label>
+          </div>
+        </div>
+        <div class="button">
+          <i class="fa-solid fa-calculator"></i>
+          Calculate Repayments
+        </div>
+      </form>
+    </div>
+    <div class="result">
+      <img src="assets/images/illustration-empty.svg" alt="illustration-empty">
+      <h3>Results shown here</h3>
+      <p>Complete the form and click “calculate repayments” to see what 
+        your monthly repayments would be.</p>
+    </div>
+  </div>
+  Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+  <!-- Completed results end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
