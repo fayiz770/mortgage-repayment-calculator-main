@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   
   <title>Mortgage repayment calculator</title>
@@ -14,39 +15,39 @@
   <div class="container">
     <div class="calculator">
       <div class="title">
-        <h1>Mortgage</h1>
+        <h1>Mortgage Calculator</h1>
         <p class="clear">Clear All</p>
       </div>
       <form action="#">
 
-        <div class="amount-container">
-          <label for="amount">Mortgage Amount</label>
-          <div class="amount">
-            <div class="euro-sign">€</div>
+        <div class="amount-container input-container">
+          <label for="amount" class="label">Mortgage Amount</label>
+          <div class="amount input">
+            <div class="pound sign label">£</div>
             <input type="text" name="amount" id="amount">
           </div>
         </div>
 
         <div class="term-and-rate-container">
-          <div>
-            <label for="term">Mortgage Term</label>
-            <div class="term">
+          <div class="input-container">
+            <label for="term" class="label">Mortgage Term</label>
+            <div class="term input">
               <input type="text" name="term" id="term">
-              <div class="years-sign">Years</div>
+              <div class="years sign label">Years</div>
             </div>
           </div>
 
-          <div>
-            <label for="rate">Interest Rate</label>
-            <div class="rate">
+          <div class="input-container">
+            <label for="rate" class="label">Interest Rate</label>
+            <div class="rate input">
               <input type="text" name="rate" id="rate">
-              <div class="percentage">%</div>
+              <div class="percent sign label">%</div>
             </div>
           </div>
         </div>
 
         <div class="type">
-          <h2>Mortgage Type</h2>
+          <h2 class="label">Mortgage Type</h2>
 
           <div class="repayment">
             <input type="radio" name="type" id="repayment"> 
@@ -70,20 +71,9 @@
         your monthly repayments would be.</p>
     </div>
   </div>
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/fayiz770">Mohammad Waris Fayiz</a>.
   </div>
 </body>
 </html>

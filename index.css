@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lime: hsl(61, 70%, 52%);
+    --red: hsl(4, 69%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --slate-100: hsl(202, 86%, 94%);
+    --slate-300: hsl(203, 41%, 72%);
+    --slate-500: hsl(200, 26%, 54%);
+    --slate-700: hsl(200, 24%, 40%);
+    --slate-900: hsl(202, 55%, 16%);
+    --font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--white);
+}
+
+/* Typo graphy */
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* main */
+
+.container {
+    padding: 2em 1em;
+}
+
+.title {
+    display: grid;
+    gap: .5em;
+    margin-bottom: 2em;
+    color: var(--slate-900);
+}
+
+.clear,
+.label {
+    color: var(--slate-700);
+}
+
+
+.clear {
+    border-bottom: 1px solid var(--slate-300);
+    width: fit-content;
+    cursor: pointer;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+}
+
+.input-container {
+    display: grid;
+    gap: .5em;
+}
+
+.input {
+    display: flex;
+    border: 2px solid var(--slate-700);
+    border-radius: .3em;
+}
+
+input[type='text'] {
+    color: var(--slate-900);
+    font-family: var(--font-family);    
+    width: 100%;
+    height: 100%;
+    padding: 1.1rem 1rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+
+input[type='radio'] {
+    accent-color: var(--slate-300);
+}
+
+
+.sign {
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    background-color: var(--slate-100);
+    padding: 1em;
+}
+
+.pound {
+    left: 0;
+}
+
+.years,
+.percent {
+    right: 0;
+}
+
+.term-and-rate-container {
+    display: grid;
+    gap: 1em;
+}
+
+.type {
+    display: grid;
+    gap: .5em;
+}
+
+.repayment, 
+.interest-only {
+    border: 1px solid var(--slate-700);
+    display: flex;
+    gap: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    color: var(--slate-900);
+    border-radius: .2em;
+}
+
+.button {
+    padding: 1em;
+    background: var(--lime);
+    border-radius: 2em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Results */
+
+.result {
+    display: grid;
+    place-items: center;
+    background: var(--slate-900);
+    margin: 2em -1em 0 -1em;
+    padding: 2em;
+    text-align: center;
+    color: var(--white);
+
+}
+
+
+/* Attribution */
+
+.attribution {
+    text-align: center;
+    padding: 1em 2em;
+}
