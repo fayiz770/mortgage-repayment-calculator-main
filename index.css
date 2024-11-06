@@ -57,6 +57,10 @@ h2 {
     cursor: pointer;
 }
 
+.clear:hover {
+    color: var(--slate-900);
+}
+
 form {
     display: grid;
     gap: 1em;
@@ -69,7 +73,7 @@ form {
 
 .input {
     display: flex;
-    border: 2px solid var(--slate-700);
+    border: 2px solid var(--slate-500);
     border-radius: .3em;
 }
 
@@ -84,10 +88,23 @@ input[type='text'] {
     outline: none;
 }
 
-input[type='radio'] {
-    accent-color: var(--slate-300);
+
+.input:hover {
+    border: 2px solid var(--slate-900);
 }
 
+input[type='radio']:checked {
+    accent-color: var(--lime);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.radio:hover {
+    border: 1px solid var(--lime);
+}
 
 .sign {
     font-weight: bold;
@@ -98,11 +115,13 @@ input[type='radio'] {
 }
 
 .pound {
+    border-radius: .3em 0 0 .3em;
     left: 0;
 }
 
 .years,
 .percent {
+    border-radius: 0 .3em .3em 0;
     right: 0;
 }
 
@@ -139,11 +158,16 @@ input[type='radio'] {
     cursor: pointer;
 }
 
+.button:hover {
+    background: hsl(61, 84%, 75%);
+}
+
 /* Results */
 
 .result {
     display: grid;
     place-items: center;
+    gap: 2em;
     background: var(--slate-900);
     margin: 2em -1em 0 -1em;
     padding: 2em;
@@ -152,10 +176,95 @@ input[type='radio'] {
 
 }
 
+.result-after {
+    padding: 2em;
+    background: var(--slate-900);
+    margin: 0 -1em;
+    color: white;
+    display: grid;
+    gap: 1.5em;
+}
+
+.result-after > h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.result-text {
+    color: var(--slate-700);
+    font-weight: bold;
+}
+
+.bil {
+    background: hsl(201, 83%, 9%);
+    border: none;
+    border-radius: .5em;
+    padding: 1em;
+    box-shadow: 0px -3px 0px var(--lime);
+    display: grid;
+    gap: 1em;
+}
+
+.bil > h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.bil-title {
+    font-weight: bold;
+    color: var(--slate-700);
+}
+
+.bil-price {
+    color: var(--lime);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: .2em;
+    border-bottom: 1px solid var(--slate-700);
+}
 
 /* Attribution */
 
 .attribution {
     text-align: center;
     padding: 1em 2em;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background: var(--slate-100);
+    }
+
+    .container {
+        background: var(--white);
+        display: flex;
+        width: 60%;
+        margin: 3em auto 0 auto;
+        padding: 0;
+        border-radius: 1em;
+    }
+
+    .calculator {
+        border-radius: 1em;
+        padding: 2em;
+        width: 50%;
+        border-radius: 1em 0 0 1em;
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 1em 1em 5em;
+        width: 50%;
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
