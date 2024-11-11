@@ -22,27 +22,30 @@
 
         <div class="amount-container input-container">
           <label for="amount" class="label">Mortgage Amount</label>
-          <div class="amount input">
-            <div class="pound sign label">£</div>
+          <div class="amount input" id="amount-container">
+            <div class="pound sign label" id="pound-sign">£</div>
             <input type="text" name="amount" id="amount">
           </div>
         </div>
+        <div class="warning-text" id="amount-warning">This field is required</div>
 
         <div class="term-and-rate-container">
           <div class="input-container">
             <label for="term" class="label">Mortgage Term</label>
-            <div class="term input">
+            <div class="term input" id="term-container">
               <input type="text" name="term" id="term">
-              <div class="years sign label">Years</div>
+              <div class="years sign label" id="years">Years</div>
             </div>
+            <div class="warning-text" id="term-warning">This field is required</div>
           </div>
 
           <div class="input-container">
             <label for="rate" class="label">Interest Rate</label>
-            <div class="rate input">
+            <div class="rate input" id="rate-container">
               <input type="text" name="rate" id="rate">
-              <div class="percent sign label">%</div>
+              <div class="percent sign label" id="percent">%</div>
             </div>
+            <div class="warning-text" id="rate-warning">This field is required</div>
           </div>
         </div>
 
@@ -50,39 +53,37 @@
           <h2 class="label">Mortgage Type</h2>
 
           <div class="repayment radio">
-            <input class="pointer" type="radio" name="type" id="repayment"> 
+            <input 
+              class="pointer" 
+              type="radio" 
+              name="type" 
+              id="repayment"
+              value="repayment"
+              checked> 
             <label for="repayment" class="pointer">Repayment</label>
           </div>
           <div class="interest-only radio">
-            <input class="pointer" type="radio" name="type" id="interest-only"> 
+            <input 
+              class="pointer" 
+              type="radio" 
+              name="type" 
+              id="interest-only"
+              value="interest-only"> 
             <label for="interest-only" class="pointer">Interest Only</label>
           </div>
         </div>
-        <div class="button">
+        <div class="button" id="button">
           <i class="fa-solid fa-calculator"></i>
           Calculate Repayments
         </div>
       </form>
     </div>
-    <div class="result">
+    <div class="result" id="result">
       <img src="assets/images/illustration-empty.svg" alt="illustration-empty">
       <h3>Results shown here</h3>
       <p>Complete the form and click “calculate repayments” to see what 
         your monthly repayments would be.</p>
     </div>
-    <!-- <div class="result-after">
-      <h2>Your Results</h2>
-      <p class="result-text">
-        Your results are shown below based on the information you provided. 
-        To adjust the results, edit the form and click "calculate repayments" again.
-      </p>
-      <div class="bil">
-        <p class="bil-title">Your monthly repayments</p>
-        <p class="bil-price">£1,797.74</p>
-        <p class="bil-title">Total you'll repay over the term</p>
-        <h2>£539,322.94</h2>
-      </div>
-    </div> -->
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
